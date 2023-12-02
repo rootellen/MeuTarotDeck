@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    tools:context=".ui.AddCardFragment">
+
+    <TextView
+        android:id="@+id/cardNameTv"
+        android:textSize="20dp"
+        android:text="Nome"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/numberLl"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/cardNameTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <TextView
+            android:textSize="18dp"
+            android:id="@+id/numberTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Número:"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:textSize="18dp"
+            android:id="@+id/cardNumberTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Número"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/numberLl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/elementTv"
+            android:layout_width="0dp"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:text="Elemento:"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:textSize="18dp"
+            android:id="@+id/cardElementTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Elemento"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        app:borderWidth="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:foregroundGravity="left"
+        android:backgroundTint="@color/colorSecundary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_arrowback"
+        app:tint="@color/colorOnPrimary"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

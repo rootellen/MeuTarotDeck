@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    tools:context=".ui.AddCardFragment">
+
+    <EditText
+        android:id="@+id/cardNameEt"
+        android:autofillHints="name"
+        android:hint="Nome"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:id="@+id/cardNameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione o número da carta (0 à 21)"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/cardNameEt" />
+
+    <Spinner
+        android:paddingTop="5sp"
+        android:id="@+id/cardNumberSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/numbers"
+        app:layout_constraintTop_toBottomOf="@id/cardNameTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:paddingTop="5dp"
+        android:textSize="18dp"
+        android:id="@+id/elementTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione o elemento da carta"
+        app:layout_constraintTop_toBottomOf="@id/cardNumberSp" />
+
+    <Spinner
+        android:paddingTop="5dp"
+        android:id="@+id/cardElementSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/elements"
+        app:layout_constraintTop_toBottomOf="@id/elementTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/saveBt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/salvar"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardElementSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

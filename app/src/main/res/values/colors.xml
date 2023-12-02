@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- https://m3.material.io/theme-builder#/custom -->
+    <!-- Light colors -->
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorSecundary">#FBE055</color>
+    <color name="colorOnPrimary">#ffffff</color>
+    <color name="colorPrimaryContainer">#FF9800</color>
+    <color name="colorOnPrimaryContainer">#FF5722</color>
+
+
+</resources>
